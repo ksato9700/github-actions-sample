@@ -1,0 +1,52 @@
+{
+  "name": "github-actions-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "start:node": "node dist/index.js",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksato9700/github-actions-sample.git"
+  },
+  "author": "Kenichi Sato <ksato9700@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/ksato9700/github-actions-sample/issues"
+  },
+  "homepage": "https://github.com/ksato9700/github-actions-sample#readme",
+  "devDependencies": {
+    "@types/jest": "25.1.2",
+    "@types/uuid": "3.4.7",
+    "jest": "25.1.0",
+    "ts-jest": "25.2.0",
+    "ts-node": "8.6.2",
+    "typescript": "3.7.5"
+  },
+  "dependencies": {
+    "uuid": "3.4.0"
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "diagnostics": false
+      }
+    },
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "testEnvironment": "node"
+  }
+}
