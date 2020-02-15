@@ -12,6 +12,7 @@ jobs:
         with:
           node-version: "12.x"
       - run: npm ci
+      - run: npm build
       - run: npm test
 
       - uses: actions/upload-artifact@v1
