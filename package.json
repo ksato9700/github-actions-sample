@@ -29,6 +29,9 @@
   "dependencies": {
     "uuid": "3.4.0"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "jest": {
     "globals": {
       "ts-jest": {
