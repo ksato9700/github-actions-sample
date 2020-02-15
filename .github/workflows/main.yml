@@ -13,9 +13,14 @@ jobs:
           node-version: "12.x"
       - run: npm ci
       - run: npm test
-      - uses: actions/setup-node@v1
+
+      - uses: actions/upload-artifact@v1
         with:
-          registry-url: "https://npm.pkg.github.com"
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          name: dist
+          path: dist
+      # - uses: actions/setup-node@v1
+      #   with:
+      #     registry-url: "https://npm.pkg.github.com"
+      # - run: npm publish
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
